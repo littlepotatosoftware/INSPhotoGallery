@@ -19,7 +19,7 @@
 
 import Foundation
 
-struct INSPhotosDataSource{
+public struct INSPhotosDataSource{
     var photos: [INSPhotoViewable] = []
     
     var numberOfPhotos: Int {

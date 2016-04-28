@@ -81,9 +81,14 @@ public class INSPhotosViewController: UIViewController, UIPageViewControllerData
         return currentPhotoViewController?.photo
     }
     
+    /*
+     * Data source allows overlay views read-only access information about
+     * currently displayed photos.
+     */
+    public private(set) var dataSource: INSPhotosDataSource
+    
     // MARK: - Private
     private(set) var pageViewController: UIPageViewController!
-    private(set) var dataSource: INSPhotosDataSource
     
     let interactiveAnimator: INSPhotosInteractionAnimator = INSPhotosInteractionAnimator()
     let transitionAnimator: INSPhotosTransitionAnimator = INSPhotosTransitionAnimator()
