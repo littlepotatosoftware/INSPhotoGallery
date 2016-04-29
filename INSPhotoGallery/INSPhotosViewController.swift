@@ -64,6 +64,7 @@ public class INSPhotosViewController: UIViewController, UIPageViewControllerData
             overlayView.view().autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
             overlayView.view().frame = view.bounds
             view.addSubview(overlayView.view())
+            updateCurrentPhotosInformation()
         }
     }
 
