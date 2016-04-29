@@ -65,6 +65,7 @@ public class INSPhotosViewController: UIViewController, UIPageViewControllerData
             overlayView.view().frame = view.bounds
             view.addSubview(overlayView.view())
             updateCurrentPhotosInformation()
+            overlayView.setHidden(oldValue.view().hidden, animated: false)
         }
     }
 
